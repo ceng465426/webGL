@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<title> Canvas_Çizgi </title>
+   <body>
+<!- WebGL de html5 ile webte 2d cizim yapmamıza olanak sağlayan apisi canvas->	
+<!- kullanacağımız alan boyutları(width,height) ve canvasa id ataması işlemi->
+      <canvas width = "320" height = "320" id = "canvasim"></canvas>
+
+    <script type="text/javascript">
+/**
+ * [canvas description] : Dökümandan HTML elementinin IDsi
+ * 						  'canvascim' olana atadım.
+ * @type {[var]}
+ */
+var canvas=document.getElementById("canvasim");
+/**
+ * [icrk description] : Oluşturulan icrk değişkenine 
+ * canvas contextini aktarıyoruz.
+ * @type {[var]}
+ */
+var icrk=canvas.getContext("2d"); 
+/**
+ *{ item_description } : MoveTo() yöntemi, belirtilen 
+ *	koordinatlara bir pencerenin sol ve üst kenarına taşır 
+ */
+icrk.moveTo(0,0);
+/**
+ * { item_description } :LineTo() yöntemi yeni bir nokta 
+ * ekler ve bu noktadan tuval son belirtilen noktadan bir 
+ * çizgi oluşturur(bu yöntem çizgi çizmek değil!)
+ *   
+ */
+icrk.lineTo(200,100);
+/**
+ * { item_description } : Stroke() yöntemi moveto() 
+ * ve lineTo() yöntemleri ile tanımlanan yolu çizer.
+ */
+icrk.stroke();
+
+</script>
+
+   </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Canvas_Kare </title>
+</head>
+<body>
+<canvas id="canvasim" width="600" height="500">
+TARAYICI <canvas> desleteklemiyor.
+</canvas>
+
+
+<script type="text/javascript">
+/**
+ * [canvas description] : Dökümandan HTML elementinin IDsi
+ * 						  'canvascim' olana atadım.
+ * @type {[var]}
+ */
+var canvas = document.getElementById("canvasim");
+/**
+ * [icrk description] : Oluşturulan icrk değişkenine 
+ * canvas contextini aktarıyoruz.
+ * @type {[var]}
+ */
+var icrk = canvas.getContext("2d");
+/**
+ * { item_description } FillStyle özelliği çizim doldurmak 
+ * için kullanılanılır.Renk, degrade ve desen döndürür 
+ * veya ayarlar.
+ */
+icrk.fillStyle='green';
+/**
+ * { item_description } 
+ * fillRect(x(merkez),y(merkez),kenar1,kenar2 )
+ * x,y şeklin merkez koordinatları
+ * kenar1,kenar2 kenar uzunlukları
+ */
+icrk.fillRect(10,10,100,100);
+</script>
+
+</body>
+</html>
